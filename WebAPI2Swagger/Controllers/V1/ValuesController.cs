@@ -4,16 +4,18 @@ using System.Web.Http;
 namespace WebAPI2Swagger.Controllers.V1
 {
     [ApiVersion("1.0")]
-    [Route("api/v{version:apiVersion}/Values")]
+    [RoutePrefix("api/v{version:apiVersion}/Values")]
     public class ValuesController : ApiController
     {
         // GET api/values
+        [Route]
         public IHttpActionResult Get()
         {
             return Ok(new string[] { "value1 of v1", "value2 of v1" });
         }
 
         // GET api/values/5
+        [Route("{id}")]
         public IHttpActionResult Get(int id)
         {
             return Ok("value");

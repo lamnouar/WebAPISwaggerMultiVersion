@@ -15,7 +15,9 @@ namespace WebAPI2Swagger
         {
             AreaRegistration.RegisterAllAreas();
             GlobalConfiguration.Configure(WebApiConfig.Register);
+            GlobalConfiguration.Configure(SwaggerConfig.Register);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
+
          
         }
     }
