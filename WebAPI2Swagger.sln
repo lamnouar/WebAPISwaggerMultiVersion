@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.28729.10
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISwaggerMultiVersion", "WebAPI2Swagger\WebAPISwaggerMultiVersion.csproj", "{222E5D7E-858C-429D-936B-78D1161E6280}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebAPISwaggerMultiVersionTests", "WebAPISwaggerMultiVersionTests\WebAPISwaggerMultiVersionTests.csproj", "{D134B709-5F07-4D60-8193-3149F7CAAA16}"
+	ProjectSection(ProjectDependencies) = postProject
+		{222E5D7E-858C-429D-936B-78D1161E6280} = {222E5D7E-858C-429D-936B-78D1161E6280}
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +20,10 @@ Global
 		{222E5D7E-858C-429D-936B-78D1161E6280}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{222E5D7E-858C-429D-936B-78D1161E6280}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{222E5D7E-858C-429D-936B-78D1161E6280}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D134B709-5F07-4D60-8193-3149F7CAAA16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D134B709-5F07-4D60-8193-3149F7CAAA16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D134B709-5F07-4D60-8193-3149F7CAAA16}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D134B709-5F07-4D60-8193-3149F7CAAA16}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
