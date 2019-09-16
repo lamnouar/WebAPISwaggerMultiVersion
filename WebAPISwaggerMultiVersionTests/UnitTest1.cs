@@ -1,14 +1,11 @@
 ﻿using System.Web.Http.Results;
-using System.Web.Mvc;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json;
 using WebAPI2Swagger.Controllers.V1;
 
 namespace WebAPISwaggerMultiVersionTests
 {
     [TestClass]
-    public class UnitTest1
+    public class ValuesControllerTests
     {
         [TestMethod]
         public void Get_ReturnsRightValues()
